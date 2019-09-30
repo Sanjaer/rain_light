@@ -17,3 +17,6 @@ or compile and flash:
 $ make flash
 ```
 The esptool.py will try to reset the ESP32, but if it can't connect simply push the "boot" button in the board while it's trying.
+
+## Resources
+This app was built using the examples provided in the RTOS SDK for ESP32 by Espressif
