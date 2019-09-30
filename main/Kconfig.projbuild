@@ -1,0 +1,59 @@
+menu "Project Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+config BLINK_GPIO
+    int "Indicator GPIO"
+	default 2
+	help
+		This LED indicates the state of the process.
+
+config BLUE_GPIO
+    int "BLUE GPIO"
+        default 25
+        help
+                This LED controls the blue LEDs.
+
+config GREEN_GPIO
+    int "GREEN GPIO"
+        default 26
+        help
+                This LED controls the green LEDs.
+
+config RED_GPIO
+    int "RED GPIO"
+        default 27
+        help
+                This LED controls the red LEDs.
+
+config HOUR_WAKE_UP
+    int "HOUR WAKE UP"
+        default 7
+        help
+                Hour of wake up
+
+config MINUTE_WAKE_UP
+    int "MINUTE WAKE UP"
+        default 0
+        help
+                Minute of wake up
+
+config TIME_AWAKE
+    int "TIME AWAKE"
+        default 10
+        help
+                Time with the lights on before going to sleep again
+
+endmenu
